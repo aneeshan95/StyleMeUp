@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- ======================================================================= -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<style type="text/css">
+  body {
+    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+</style>
+<!-- ======================================================================= -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114291442-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114291442-6');
+</script>
+
+
+<script type="text/javascript" src="resources/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--<link rel="icon" type="image/png" href="../img/favicon.ico">-->
+  <title>StyleMeUp: Towards Style-Agnostic Sketch-Based Image Retrieval</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+<body>
+
+      <table align=center width=600px>
+      <tr><td align=center width=600px>
+          <center><img src = "./Images/logo.jpg" width="90%"></img><br></center>
+      </td></tr>
+      </table>
+
+
+
+      <center><span style="font-size:44px;font-weight:bold;">StyleMeUp: Towards Style-Agnostic Sketch-Based Image Retrieval</span></center><br/>
+      <table align=center width=950px>
+      <tr>
+        <td align=center width=230px>
+        <center><span style="font-size:22px"><a href="http://aneeshan95.github.io/" target="_blank">Aneeshan Sain</a></span></center></td>
+        
+        <td align=center width=230px>
+		<center><span style="font-size:22px"><a href="http://ayankumarbhunia.github.io/" target="_blank">Ayan Kumar Bhunia</a></span></center></td>
+        
+          
+        <td align=center width=230px>
+        <center><span style="font-size:22px"><a href="https://www.surrey.ac.uk/people/yongxin-yang/" target="_blank">Yongxin Yang</a></span></center></td>
+          
+        <td align=center width=230px>
+        <center><span style="font-size:22px"><a href="http://personal.ee.surrey.ac.uk/Personal/T.Xiang/index.html/" target="_blank">Tao (Tony) Xiang</a></span></center></td>
+
+        <td align=center width=180px>
+        <center><span style="font-size:22px"><a href="http://personal.ee.surrey.ac.uk/Personal/Y.Song/" target="_blank">Yi-Zhe Song</a></span></center></td>
+
+
+      <tr/>
+	
+<!--      <tr>-->
+<!--        <td align=center width=250px>-->
+<!--        <center><span style="font-size:20px">SketchX, CVSSP, University of Surrey, United Kingdom</span></center></td>-->
+<!--        <td align=center width=250px>-->
+<!--        <center><span style="font-size:20px">CMU</span></center></td>-->
+<!--        <td align=center width=150px>-->
+<!--        <center><span style="font-size:20px">CMU/FAIR</span></center></td>-->
+<!--        <td align=center width=150px>-->
+<!--        <center><span style="font-size:20px">UIUC</span></center></td>-->
+<!--      <tr/>-->
+<!--      </table>-->
+
+      <table align=center width=1000px>
+          <tr>
+		    <br/>
+            <td align=center width=800px><center><span style="font-size:22px">SketchX, Centre for Vision Speech and Signal Processing, <br /> University of Surrey, United Kingdom </span></center></td>
+          <tr/>
+      </table><br/>
+
+
+
+      <table align=center width=700px>
+          <tr>
+            <td align=center width=700px><center><span style="font-size:22px">Published at <a href="http://cvpr2021.thecvf.com/">CVPR 2021</a> </span></center></td>
+          <tr/>
+      </table><br/>
+
+      <table align=center width=700px>
+          <tr>
+            <td align=center width=70px><center><span style="font-size:28px"><a href="https://arxiv.org/pdf/2103.15706.pdf">[Paper]</a></span></center></td>
+            <td align=center width=70px><center><span style="font-size:28px">[Talk]</a></span></center></td>
+            <td align=center width=70px><center><span style="font-size:28px">[Slides]</a></span></center></td>
+<td align=center width=100px><center><span style="font-size:28px"><a href="https://github.com/aneeshan95/StyleMeUp">[GitHub]</a></span></center></td>
+            <!--            <td align=center width=100px><center><span style="font-size:28px"><a href='https://github.com/devendrachaplot/Neural-SLAM'>[GitHub Code]</a></span></center></td>  -->
+          <tr/>
+      </table><br/>
+
+
+
+
+<!--       <center><h2>Project Video</h2></center> -->
+      <table align=center width=800px>
+      <tr><td align=center width=600px>
+<!--      <iframe width="768" height="432" src="https://youtu.be/tlyz68j_jvE" frameborder="0" allowfullscreen></iframe>-->
+<!--          <iframe width="768" height="432" src="https://www.youtube.com/embed/tlyz68j_jvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+          <center><img src = "./Images/opening.png" width="100%"></img><br></center>
+      </td></tr>
+      </table>
+      <br>
+
+		<div style="width:800px; margin:0 auto; text-align:justify;">
+Sketch-based image retrieval (SBIR) is a cross-modal matching problem which is typically solved by learning a joint embedding space where the semantic content shared between photo and sketch modalities are preserved. However, a fundamental challenge in SBIR has been largely ignored so far, that is, sketches are drawn by humans and considerable style variations exist amongst different users. An effective SBIR model needs to explicitly account for
+this style diversity, crucially, to generalise to unseen user styles. To this end, a novel style-agnostic SBIR model is proposed. Different from existing models, a cross-modal variational autoencoder (VAE) is employed to explicitly disentangle each sketch into a semantic content part shared with the corresponding photo, and a style part unique to the sketcher. Importantly, to make our model dynamically adaptable to any unseen user styles, we propose to metatrain our cross-modal VAE by adding two style-adaptive components: a set of feature transformation layers to its encoder and a regulariser to the disentangled semantic content latent code. With this meta-learning framework, our model can not only disentangle the cross-modal shared semantic content for SBIR, but can adapt the disentanglement to any unseen user style as well, making the SBIR model truly style-agnostic. Extensive experiments show that our style-agnostic model yields state-of-the-art performance for both category-level and instance-level SBIR.
+		</div>
+      <br><hr>
+
+      <div style="width:800px; margin:0 auto; text-align:justify;">
+      <center><h1>StyleMeUp: Towards Style-Agnostic Sketch-Based Image Retrieval</h1></center>
+        
+      </div><br/>
+      <table align=center width=1000px>
+        <p style="margin-top:4px;"></p>
+        <tr><td width=1200px>
+          <center><a href="./Images/retrieval.jpg"><img src = "./Images/retrieval.jpg" width="800px"></img></a><br></center>
+        </td></tr>
+      </table>
+      <br/><hr>
+
+
+	  <!--
+      <center><h1>Short Presentation</h1></center>
+      <table align=center width=300px>
+      <tr><td align=center width=300px>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/JVyFexPEu-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </td></tr>
+      </table>
+      <br><hr>
+		<!--https://youtu.be/JVyFexPEu-U-->
+		
+		
+      <table align=center width=850px>
+        <center><h1>Paper and Bibtex</h1></center>
+        <tr>
+        <td width=200px align=left>
+        <!-- <p style="margin-top:4px;"></p> -->
+        <a href="https://arxiv.org/pdf/2007.15103.pdf"><img style="width:200px" src="./images/opening2.jpg"/></a>
+        <center>
+        <span style="font-size:20pt"><a href="https://arxiv.org/pdf/2007.15103.pdf">[Paper]</a>
+<!--        <span style="font-size:20pt"><a href="https://arxiv.org/abs/1902.05546v2">[ArXiv]</a>-->
+<!--        <span style="font-size:20pt"><a href="resources/slides.pdf">[Slides]</a></span>-->
+<!--        <span style="font-size:20pt"><a href="resources/poster.pdf">[Poster]</a></span>-->
+        </center>
+        </td>
+        <td width=50px align=center>
+        </td>
+        <td width=550px align=left>
+        <!-- <p style="margin-top:4px;"></p> -->
+<!--            Chaplot, D.S., Gandhi, D., Gupta, S., Gupta, A. and Salakhutdinov, R., 2020. Learning To Explore Using Active Neural SLAM. In International Conference on Learning Representations (ICLR).-->
+        <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt"> StyleMeUp: Towards Style-Agnostic Sketch-Based Image Retrieval. In CVPR 2021.</span></p>
+        <!-- <p style="margin-top:20px;"></p> -->
+        <span style="font-size:20pt"><a shape="rect" class="togglebib">[Bibtex]</a></span> <!-- href="javascript:togglebib('assemblies19_bib')"-->
+        <div class="paper" id="assemblies19_bib">
+                <pre xml:space="preserve">
+@inproceedings{stylemeup,
+author = {Aneeshan Sain and Ayan Kumar Bhunia and Yongxin Yang and Tao Xiang and Yi-Zhe Song},
+title = {StyleMeUp: Towards Style-Agnostic Sketch-Based Image Retrieval},
+booktitle = {CVPR},
+year = {2021}
+}
+        </pre>
+          </div>
+        </td>
+        </tr>
+        <tr>
+        <td width=250px align=left>
+        </td>
+        <td width=50px align=center>
+        </td>
+        <td width=550px align=left>
+          
+          </td>
+          </tr>
+      </table>
+	  
+	 <!-- 
+    <br><hr>
+      <div style="width:800px; margin:0 auto; text-align=justify">
+      </div><br/>
+      <table align=center width=1000px>
+        <p style="margin-top:4px;"></p>
+        <tr><td width=1200px>
+          <center><a href="./images/4367-teaser.gif"><img src = "./images/4367-teaser.gif" width="512px"></img></a><br></center>
+        </td></tr>
+      </table>
+      <br/><hr>
+    <table align=center width=800px>
+      <tr><td width=800px><left>
+	-->
+      <center><h1>Acknowledgements</h1></center>
+    <br>
+          Website template from <a href="https://richzhang.github.io/colorization">here</a> and <a href="https://pathak22.github.io/modular-assemblies/">here</a>. <br>
+      </left></td></tr>
+    </table>
+  <br><br>
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+</body>
+</html>
