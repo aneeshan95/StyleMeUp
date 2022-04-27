@@ -7,10 +7,12 @@ each sketch into a semantic content part shared with the corresponding photo, an
 
 # Illustration
 ![](./Images/opening.png)
+
 Owing to subjective interpretation, different users sketch the same object instance (a shoe here) very differently. Without considering this style diversity, an existing SBIR model yields completely different results for different sketches. With our styleagnostic model, the same intended object is retrieved.
  
 # Framework
 ![](./Images/framework.png)
+
 Our core model is a VAE framework that disentangles the modal variant and invariant semantics in a sketch in a crossmodal translation setting. While a regulariser network regularises parameters of the invariant component (inv), feature transformation (FT) layers aid in style-agnostic encoding following a metalearning paradigm.
 
 ## Implementation
