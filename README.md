@@ -14,7 +14,7 @@ Owing to subjective interpretation, different users sketch the same object insta
 Our core model is a VAE framework that disentangles the modal variant and invariant semantics in a sketch in a crossmodal translation setting. While a regulariser network regularises parameters of the invariant component (inv), feature transformation (FT) layers aid in style-agnostic encoding following a metalearning paradigm.
 
 ## Implementation
-* We use QMUL-ChairV2 and QMUL-ShoeV2 datasets (Available [here](http://sketchx.eecs.qmul.ac.uk/downloads/)) for Fine-Grained SBIR, and TUBerlin (ext) and Sketchy(ext) for categorical SBIR.
+* We used QMUL-ChairV2 and QMUL-ShoeV2 datasets (Available [here](http://sketchx.eecs.qmul.ac.uk/downloads/)) for Fine-Grained SBIR, and TUBerlin (ext) and Sketchy(ext) for categorical SBIR.
 Please read the [paper](https://arxiv.org/pdf/2103.15706.pdf) for details.
 
 # Results
